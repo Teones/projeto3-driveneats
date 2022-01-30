@@ -23,19 +23,19 @@
         <div class="corpo">
             Primeiro, seu prato
             <div class="pratos">
-                <div class="opcao">
+                <div class="opcao" onclick="escolherPrato(this)">
                     <img src="/Imagens/rubacao.jpg" alt="">
                     <h1>Rubacão 🔝</h1>
                     <h2>Uma explosão de sabores</h2>
                     <p class="preco">R$ 14,99</p>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="escolherPrato(this)">
                     <img src="/Imagens/rubacao.jpg" alt="">
                     <h1>Rubacão 🔝</h1>
                     <h2>Uma explosão de sabores</h2>
                     <p class="preco">R$ 14,99</p>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="escolherPrato(this)">
                     <img src="/Imagens/rubacao.jpg" alt="">
                     <h1>Rubacão 🔝</h1>
                     <h2>Uma explosão de sabores</h2>
@@ -44,19 +44,19 @@
             </div>
             Agora, sua bebida
             <div class="bebidas">
-                <div class="opcao">
+                <div class="opcao" onclick="escolherBebida(this)">
                     <img src="/Imagens/rubacao.jpg" alt="">
                     <h1>Rubacão 🔝</h1>
                     <h2>Uma explosão de sabores</h2>
                     <p class="preco">R$ 14,99</p>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="escolherBebida(this)">
                     <img src="/Imagens/rubacao.jpg" alt="">
                     <h1>Rubacão 🔝</h1>
                     <h2>Uma explosão de sabores</h2>
                     <p class="preco">R$ 14,99</p>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="escolherBebida(this)">
                     <img src="/Imagens/rubacao.jpg" alt="">
                     <h1>Rubacão 🔝</h1>
                     <h2>Uma explosão de sabores</h2>
@@ -65,19 +65,19 @@
             </div>
             Por fim, sua sobremesa
             <div class="sobremesas">
-                <div class="opcao">
+                <div class="opcao" onclick="escolherSobremesa(this)">
                     <img src="/Imagens/rubacao.jpg" alt="">
                     <h1>Rubacão 🔝</h1>
                     <h2>Uma explosão de sabores</h2>
                     <p class="preco">R$ 14,99</p>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="escolherSobremesa(this)">
                     <img src="/Imagens/rubacao.jpg" alt="">
                     <h1>Rubacão 🔝</h1>
                     <h2>Uma explosão de sabores</h2>
                     <p class="preco">R$ 14,99</p>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="escolherSobremesa(this)">
                     <img src="/Imagens/rubacao.jpg" alt="">
                     <h1>Rubacão 🔝</h1>
                     <h2>Uma explosão de sabores</h2>
@@ -86,10 +86,12 @@
             </div>
         </div>
         <div class="barraInferior">
-            <div class="botao">
+            <div class="botao" onclick="finalizarPedido()">
                 Selecione os 3 itens <br> para fechar o pedido
             </div>
         </div>
     </div>
+
+    <script src="JavaScript/drivenEats.js"></script>
 </body>
 </html>
