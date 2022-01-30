@@ -10,7 +10,7 @@ function escolherPrato(prato) {
     prato.classList.add("selecionado")
     
     escolheuPrato = "sim"
-    finalizarPedido()
+    ativarBotao()
 }
 function escolherBebida(bebida) {
     let selecionado = document.querySelector(".bebidas .selecionado")
@@ -20,7 +20,7 @@ function escolherBebida(bebida) {
     bebida.classList.add("selecionado")
 
     escolheuBebida = "sim"
-    finalizarPedido()
+    ativarBotao()
 }
 function escolherSobremesa(sobremesa) {
     let selecionado = document.querySelector(".sobremesas .selecionado")
@@ -30,13 +30,17 @@ function escolherSobremesa(sobremesa) {
     sobremesa.classList.add("selecionado")
 
     escolheuSobremesa = "sim"
-    finalizarPedido()
+    ativarBotao()
 }
 
-function finalizarPedido() {
+function ativarBotao() {
     let finalizar = document.querySelector(".botao")
     if (escolheuPrato == "sim" && escolheuBebida == "sim" && escolheuSobremesa == "sim") {
         finalizar.classList.add("ativo")
         finalizar.innerHTML = "Fechar Pedido"
     }
+}
+
+function finalizarPedido() {
+    
 }
