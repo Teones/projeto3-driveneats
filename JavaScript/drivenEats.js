@@ -1,7 +1,7 @@
 let escolheuPrato
 let valorPrato
 let escolheuBebida
-let valorBebida
+let valorBebida 
 let escolheuSobremesa
 let valorSobremesa
 
@@ -11,9 +11,9 @@ function escolherPrato(prato) {
         selecionado.classList.toggle("selecionado")
     }
     prato.classList.add("selecionado")
-
+    
     let valor = document.querySelector(".pratos .selecionado .preco .valor")
-    valorPrato = parseFloat(valor.innerHTML).toFixed(2)
+    valorPrato = (valor.innerHTML)
     
     escolheuPrato = "sim"
     ativarBotao()
@@ -24,10 +24,10 @@ function escolherBebida(bebida) {
         selecionado.classList.toggle("selecionado")
     }
     bebida.classList.add("selecionado")
-
+    
     let valor = document.querySelector(".bebidas .selecionado .preco .valor")
-    valorBebida = parseFloat(valor.innerHTML).toFixed(2)
-
+    valorBebida = valor.innerHTML
+    
     escolheuBebida = "sim"
     ativarBotao()
 }
@@ -37,10 +37,10 @@ function escolherSobremesa(sobremesa) {
         selecionado.classList.toggle("selecionado")
     }
     sobremesa.classList.add("selecionado")
-
+    
     let valor = document.querySelector(".sobremesas .selecionado .preco .valor")
-    valorSobremesa = parseFloat(valor.innerHTML).toFixed(2)
-
+    valorSobremesa = valor.innerHTML
+    
     escolheuSobremesa = "sim"
     ativarBotao()
 }
@@ -53,6 +53,7 @@ function ativarBotao() {
     }
 }
 
+
 function finalizarPedido() {
     let pratoEscolhido = document.querySelector(".pratos .selecionado h1")
     let bebidaEscolhida = document.querySelector(".bebidas .selecionado h1")
@@ -64,8 +65,10 @@ function finalizarPedido() {
         nome = prompt("Qual o seu nome?")
         endereco = prompt("Qual o seu endereço?")
     }
+    
+    let valorTotal = (parseFloat(valorPrato) + parseFloat(valorBebida) + parseFloat(valorSobremesa)).toFixed(2)
 
-    let mensagem =`Olá, gostaria de fazer o pedido:\n   - Prato: ${pratoEscolhido.innerHTML}\n   - Bebida: ${bebidaEscolhida.innerHTML}\n   - Sobremesa: ${sobremesaEscolhida.innerHTML}\n
+    let mensagem =`Olá, gostaria de fazer o pedido:\n   - Prato: ${pratoEscolhido.innerHTML}\n   - Bebida: ${bebidaEscolhida.innerHTML}\n   - Sobremesa: ${sobremesaEscolhida.innerHTML}\n   Total: R$ ${valorTotal}\n
     Nome: ${nome}\n    Endereço: ${endereco}`
     window.open("https://wa.me/+558399422831?text=" + encodeURIComponent(mensagem))
 }
