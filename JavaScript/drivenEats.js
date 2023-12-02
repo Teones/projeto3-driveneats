@@ -68,7 +68,8 @@ function finalizarPedido() {
     
     let valorTotal = (parseFloat(valorPrato) + parseFloat(valorBebida) + parseFloat(valorSobremesa)).toFixed(2)
 
-    let mensagem =`Olá, gostaria de fazer o pedido:\n   - Prato: ${pratoEscolhido.innerHTML}\n   - Bebida: ${bebidaEscolhida.innerHTML}\n   - Sobremesa: ${sobremesaEscolhida.innerHTML}\n   Total: R$ ${valorTotal}\n
+    let mensagem =`Olá, gostaria de fazer um pedido:\n   - Prato: ${pratoEscolhido.innerHTML}\n   - Bebida: ${bebidaEscolhida.innerHTML}\n   - Sobremesa: ${sobremesaEscolhida.innerHTML}\n   Total: R$ ${valorTotal}\n
     Nome: ${nome}\n    Endereço: ${endereco}`
+
     window.open("https://wa.me/+558399422831?text=" + encodeURIComponent(mensagem))
 }

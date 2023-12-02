@@ -19,6 +19,7 @@ body {
     padding: 8px 21px;
 
     position: fixed;
+    z-index: 1;
 }
 .topo h1 {
     font-family: righteous;
