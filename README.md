@@ -11,7 +11,7 @@
 
 DrivenEats is a delivery app that puts you in control. Choose a main dish, a drink, and a dessert to create your perfect meal. Once all three items are selected, an order button is unlocked, allowing you to place your order and send it to the restaurant's WhatsApp.
 
-|<img src="Imagens/mobile (3).png" alt="Imagem 1" width="400" style="border: none;"/> | <img src="Imagens/mobile (2).png" alt="Imagem 2" width="400" style="border: none;"/> |
+|<img src="Imagens/mobile (3).png" alt="Imagem 1" width="200" style="border: none;"/> | <img src="Imagens/mobile (2).png" alt="Imagem 2" width="200" style="border: none;"/> |
 |:-:|:-:|
 
 
